@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		/* Hogar de Bari - Paleta de Colores MODERNA */
+		/* Fondo: #F9F1E8 (Crema) */
+		/* Botones: #909d7b (Verde moderno) */
+		/* Texto: #2c2c2c (Gris oscuro) */
+		
+		--background: 0 0% 100%;
+		--foreground: 0 0% 17%;
+		--card: 0 0% 100%;
+		--card-foreground: 0 0% 17%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 0 0% 17%;
+		--primary: 91 13% 55%;
+		--primary-foreground: 0 0% 100%;
+		--secondary: 36 53% 95%;
+		--secondary-foreground: 0 0% 17%;
+		--muted: 36 53% 95%;
+		--muted-foreground: 0 0% 42%;
+		--accent: 91 13% 55%;
+		--accent-foreground: 0 0% 100%;
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 36 30% 85%;
+		--input: 36 30% 85%;
+		--ring: 91 13% 55%;
+		--radius: 0.5rem;
+		
+		/* Variables directas HEX - PALETA MODERNA */
+		--color-fondo-crema: #F9F1E8;
+		--color-boton: #909d7b;
+		--color-boton-hover: #7a8766;
+		--color-texto-oscuro: #2c2c2c;
+		--color-texto-secundario: #6b6b6b;
+		--color-blanco: #ffffff;
+	}
+	
+	body {
+		background-color: var(--color-blanco);
+		color: var(--color-texto-oscuro);
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+		font-feature-settings: 'rlig' 1, 'calt' 1;
+	}
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+

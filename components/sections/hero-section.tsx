@@ -25,9 +25,8 @@ export function HeroSection() {
 					Hogar de Bari
 				</h1>
 				<p className='mb-8 max-w-3xl text-lg leading-relaxed text-white/90 md:text-xl'>
-					Transformando vidas a través de la integración social en Sevilla
-					capital. Nuestra política de admisión está basada en buscar la
-					semejanza de edades entre nuestros residentes.
+					En HdB, ofrecemos un entorno seguro, humano y profesional donde cada
+					persona es tratada con respeto, cariño y con un plan de vida propio.
 				</p>
 				<div className='flex flex-col gap-4 sm:flex-row'>
 					<Button

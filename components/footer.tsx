@@ -32,7 +32,7 @@ export function Footer() {
 									href='#quienes-somos'
 									className='text-primary-foreground/80 transition-colors hover:text-primary-foreground'
 								>
-									¿Quiénes somos?
+									Nuestro método
 								</Link>
 							</li>
 							<li>

@@ -42,7 +42,7 @@ export function HeroSection() {
 						className='border-white bg-white/10 text-white backdrop-blur-sm hover:bg-white/20'
 						asChild
 					>
-						<a href='#quienes-somos'>Conocer Más</a>
+						<a href='#quienes-somos'>Ver nuestro método</a>
 					</Button>
 				</div>
 

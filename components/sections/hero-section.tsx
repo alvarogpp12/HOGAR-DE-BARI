@@ -10,7 +10,7 @@ import {
 	DialogTrigger,
 	DialogClose,
 } from '@/components/ui/dialog'
-import { ChevronDown, Clock, UserCheck, Users, MessageCircle, Phone, Mail } from 'lucide-react'
+import { ChevronDown, Clock, ClipboardList, Users, MessageCircle, Phone, Mail } from 'lucide-react'
 
 const beneficios = [
 	{
@@ -20,7 +20,7 @@ const beneficios = [
 			'Siempre hay alguien pendiente. De día y de noche hay profesionales en el centro, preparados para actuar si ocurre cualquier cosa.',
 	},
 	{
-		icon: UserCheck,
+		icon: ClipboardList,
 		titulo: 'Plan a medida',
 		descripcion:
 			'No hacemos "lo mismo para todos". Hablamos con vosotros, vemos qué necesita y qué le ayuda, y a partir de ahí marcamos rutinas y apoyos a su medida.',

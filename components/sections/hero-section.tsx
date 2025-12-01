@@ -43,9 +43,6 @@ export function HeroSection() {
 			<div className='absolute inset-0 bg-black/60' />
 
 			<div className='relative flex min-h-screen flex-col items-center justify-center px-4 py-20 text-center text-white'>
-				<p className='mb-4 text-sm uppercase tracking-widest text-white/90 md:text-base'>
-					Residencia para Personas con Discapacidad Intelectual
-				</p>
 				<h1 className='mb-6 font-serif text-5xl font-bold leading-tight text-white md:text-7xl'>
 					Bienvenido al
 					<br />
@@ -95,12 +92,12 @@ export function HeroSection() {
 						className='border-white bg-white/10 text-white backdrop-blur-sm hover:bg-white/20'
 						asChild
 					>
-						<a href='#metodo'>Ver nuestro método</a>
+						<a href='#metodo-detallado'>Ver nuestro método</a>
 					</Button>
 				</div>
 
 				<a
-					href='#metodo'
+					href='#metodo-detallado'
 					className='absolute bottom-8 animate-bounce'
 					aria-label='Scroll down'
 				>

@@ -17,41 +17,33 @@ export function Footer() {
 					</div>
 
 					<div>
-						<h4 className='mb-4 font-semibold'>Enlaces Rápidos</h4>
-						<ul className='space-y-2 text-sm'>
-							<li>
-								<Link
-									href='#inicio'
-									className='text-primary-foreground/80 transition-colors hover:text-primary-foreground'
-								>
-									Inicio
-								</Link>
-							</li>
-							<li>
-								<Link
-									href='#metodo'
-									className='text-primary-foreground/80 transition-colors hover:text-primary-foreground'
-								>
-									Nuestro método
-								</Link>
-							</li>
-							<li>
-								<Link
-									href='#servicios'
-									className='text-primary-foreground/80 transition-colors hover:text-primary-foreground'
-								>
-									Servicios
-								</Link>
-							</li>
-							<li>
-								<Link
-									href='#contacto'
-									className='text-primary-foreground/80 transition-colors hover:text-primary-foreground'
-								>
-									Contacto
-								</Link>
-							</li>
-						</ul>
+					<h4 className='mb-4 font-semibold'>Enlaces Rápidos</h4>
+					<ul className='space-y-2 text-sm'>
+						<li>
+							<Link
+								href='#inicio'
+								className='text-primary-foreground/80 transition-colors hover:text-primary-foreground'
+							>
+								Inicio
+							</Link>
+						</li>
+						<li>
+							<Link
+								href='#metodo-detallado'
+								className='text-primary-foreground/80 transition-colors hover:text-primary-foreground'
+							>
+								Nuestro método
+							</Link>
+						</li>
+						<li>
+							<Link
+								href='#contacto'
+								className='text-primary-foreground/80 transition-colors hover:text-primary-foreground'
+							>
+								Contacto
+							</Link>
+						</li>
+					</ul>
 					</div>
 
 					<div>

@@ -29,7 +29,7 @@ export function Footer() {
 							</li>
 							<li>
 								<Link
-									href='#quienes-somos'
+									href='#metodo'
 									className='text-primary-foreground/80 transition-colors hover:text-primary-foreground'
 								>
 									Nuestro método

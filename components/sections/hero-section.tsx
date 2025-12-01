@@ -1,10 +1,37 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, Clock, UserCheck, Users, MessageCircle } from 'lucide-react'
+
+const beneficios = [
+	{
+		icon: Clock,
+		titulo: 'Atención 24 horas',
+		descripcion:
+			'Siempre hay alguien pendiente. De día y de noche hay profesionales en el centro, preparados para actuar si ocurre cualquier cosa.',
+	},
+	{
+		icon: UserCheck,
+		titulo: 'Un plan pensado para tu familiar',
+		descripcion:
+			'No hacemos "lo mismo para todos". Hablamos con vosotros, vemos qué necesita y qué le ayuda, y a partir de ahí marcamos rutinas y apoyos a su medida.',
+	},
+	{
+		icon: Users,
+		titulo: 'Equipo con experiencia, pero también cercano',
+		descripcion:
+			'Psicología, enfermería, fisioterapia, educación… pero sobre todo personas que tratan a los residentes con respeto y paciencia.',
+	},
+	{
+		icon: MessageCircle,
+		titulo: 'Comunicación constante con la familia',
+		descripcion:
+			'No quieres enterarte de las cosas "cuando ya han pasado". Mantenemos el contacto, contamos cómo va todo y escuchamos vuestras dudas.',
+	},
+]
 
 export function HeroSection() {
 	return (
-		<section id='inicio' className='relative h-screen w-full'>
+		<section id='inicio' className='relative min-h-screen w-full'>
 			<Image
 				src='https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=2076'
 				alt='Hogar de Bari'
@@ -13,9 +40,9 @@ export function HeroSection() {
 				className='object-cover'
 				sizes='100vw'
 			/>
-			<div className='absolute inset-0 bg-black/50' />
+			<div className='absolute inset-0 bg-black/60' />
 
-			<div className='relative flex h-full flex-col items-center justify-center px-4 text-center text-white'>
+			<div className='relative flex min-h-screen flex-col items-center justify-center px-4 py-20 text-center text-white'>
 				<p className='mb-4 text-sm uppercase tracking-widest text-white/90 md:text-base'>
 					Residencia para Personas con Discapacidad Intelectual
 				</p>
@@ -24,10 +51,36 @@ export function HeroSection() {
 					<br />
 					Hogar de Bari
 				</h1>
-				<p className='mb-8 max-w-3xl text-lg leading-relaxed text-white/90 md:text-xl'>
+				<p className='mb-12 max-w-3xl text-lg leading-relaxed text-white/90 md:text-xl'>
 					En HdB, ofrecemos un entorno seguro, humano y profesional donde cada
 					persona es tratada con respeto, cariño y con un plan de vida propio.
 				</p>
+
+				{/* Grid de beneficios */}
+				<div className='mb-12 grid w-full max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4'>
+					{beneficios.map((beneficio, index) => {
+						const Icon = beneficio.icon
+						return (
+							<div
+								key={index}
+								className='group rounded-lg bg-white/10 p-6 backdrop-blur-md transition-all duration-300 hover:bg-white/20'
+							>
+								<div className='mb-4 flex justify-center'>
+									<div className='flex h-16 w-16 items-center justify-center rounded-full bg-[#909d7b]'>
+										<Icon className='h-8 w-8 text-white' />
+									</div>
+								</div>
+								<h3 className='mb-3 font-serif text-lg font-bold text-white'>
+									{beneficio.titulo}
+								</h3>
+								<p className='text-sm leading-relaxed text-white/80'>
+									{beneficio.descripcion}
+								</p>
+							</div>
+						)
+					})}
+				</div>
+
 				<div className='flex flex-col gap-4 sm:flex-row'>
 					<Button
 						size='lg'
@@ -42,12 +95,12 @@ export function HeroSection() {
 						className='border-white bg-white/10 text-white backdrop-blur-sm hover:bg-white/20'
 						asChild
 					>
-						<a href='#quienes-somos'>Ver nuestro método</a>
+						<a href='#metodo'>Ver nuestro método</a>
 					</Button>
 				</div>
 
 				<a
-					href='#quienes-somos'
+					href='#metodo'
 					className='absolute bottom-8 animate-bounce'
 					aria-label='Scroll down'
 				>

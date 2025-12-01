@@ -2,6 +2,7 @@ import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { HeroSection } from '@/components/sections/hero-section'
 import { AboutSection } from '@/components/sections/about-section'
+import { MetodoDetalladoSection } from '@/components/sections/metodo-detallado-section'
 import { ValoresSection } from '@/components/sections/valores-section'
 import { VisionMisionSection } from '@/components/sections/vision-mision-section'
 import { ServicesSection } from '@/components/sections/services-section'
@@ -14,6 +15,7 @@ export default function Home() {
 			<Navigation />
 			<HeroSection />
 			<AboutSection />
+			<MetodoDetalladoSection />
 			<ValoresSection />
 			<VisionMisionSection />
 			<ServicesSection />

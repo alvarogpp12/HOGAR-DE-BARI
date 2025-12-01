@@ -92,9 +92,6 @@ export function Footer() {
 								<Twitter className='h-5 w-5' />
 							</Link>
 						</div>
-						<p className='mt-6 text-xs text-primary-foreground/60'>
-							Desarrollado por Vulqo
-						</p>
 					</div>
 				</div>
 

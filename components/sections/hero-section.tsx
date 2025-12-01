@@ -8,6 +8,7 @@ import {
 	DialogHeader,
 	DialogTitle,
 	DialogTrigger,
+	DialogClose,
 } from '@/components/ui/dialog'
 import { ChevronDown, Clock, UserCheck, Users, MessageCircle, Phone, Mail } from 'lucide-react'
 
@@ -123,17 +124,19 @@ export function HeroSection() {
 										Llamar ahora: 651 105 396
 									</a>
 								</Button>
-								<Button
-									size='lg'
-									variant='outline'
-									className='flex items-center gap-3 border-[#909d7b] text-[#909d7b] hover:bg-[#909d7b] hover:text-white'
-									asChild
-								>
-									<a href='#contacto'>
-										<Mail className='h-5 w-5' />
-										Ir al formulario
-									</a>
-								</Button>
+								<DialogClose asChild>
+									<Button
+										size='lg'
+										variant='outline'
+										className='flex items-center gap-3 border-[#909d7b] text-[#909d7b] hover:bg-[#909d7b] hover:text-white'
+										asChild
+									>
+										<a href='#contacto'>
+											<Mail className='h-5 w-5' />
+											Ir al formulario
+										</a>
+									</Button>
+								</DialogClose>
 							</div>
 						</DialogContent>
 					</Dialog>

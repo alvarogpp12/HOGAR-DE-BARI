@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -34,15 +35,18 @@ export function Navigation() {
 		>
 			<div className='container mx-auto px-0'>
 				<div className='flex h-24 items-center justify-between'>
-					<Link href='/' className='-ml-4 shrink-0'>
-						<img
-							src='/LOGO/Hogar de Bari.svg'
-							alt='Hogar de Bari'
-							className={`h-[115px] w-auto transition-all ${
-								isScrolled ? 'brightness-0' : 'brightness-0 invert'
-							}`}
-						/>
-					</Link>
+				<Link href='/' className='-ml-4 shrink-0'>
+					<Image
+						src='/LOGO/Hogar de Bari.svg'
+						alt='Hogar de Bari'
+						width={115}
+						height={115}
+						className={`h-[115px] w-auto transition-all ${
+							isScrolled ? 'brightness-0' : 'brightness-0 invert'
+						}`}
+						priority
+					/>
+				</Link>
 					
 					<div className='hidden items-center gap-10 pr-4 md:flex'>
 

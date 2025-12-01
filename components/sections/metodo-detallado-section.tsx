@@ -59,30 +59,30 @@ const fases = [
 
 export function MetodoDetalladoSection() {
 	return (
-		<section id='metodo-detallado' className='bg-white py-20'>
+		<section id='metodo-detallado' className='bg-white py-12 md:py-20'>
 			<div className='container mx-auto px-4'>
-			<div className='mb-16 text-center'>
-				<h2 className='mb-6 font-serif text-4xl font-bold text-[#2c2c2c] md:text-5xl'>
+				<div className='mb-8 md:mb-16 text-center'>
+					<h2 className='mb-4 md:mb-6 font-serif text-3xl md:text-5xl font-bold text-[#2c2c2c]'>
 					Así es el Método HDB
 				</h2>
-				<p className='mx-auto max-w-3xl text-lg leading-relaxed text-[#6b6b6b]'>
+					<p className='mx-auto max-w-3xl text-base md:text-lg leading-relaxed text-[#6b6b6b]'>
 					El Método HDB no es una teoría complicada, es nuestra forma de
 					asegurar que tu familiar recibe lo que necesita y que tú sabes en
 					todo momento qué estamos haciendo y por qué.
 				</p>
 			</div>
 
-				<div className='mx-auto max-w-6xl space-y-16'>
+				<div className='mx-auto max-w-6xl space-y-10 md:space-y-16'>
 					{fases.map((fase, index) => (
 						<div
 							key={index}
-							className={`grid gap-8 md:grid-cols-2 md:items-center ${
+							className={`grid gap-6 md:gap-8 md:grid-cols-2 md:items-center ${
 								index % 2 === 1 ? 'md:flex-row-reverse' : ''
 							}`}
 						>
 							{/* Imagen */}
 							<div
-								className={`relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg ${
+								className={`relative aspect-[4/3] max-h-[250px] md:max-h-none overflow-hidden rounded-lg shadow-lg ${
 									index % 2 === 1 ? 'md:order-2' : ''
 								}`}
 							>
@@ -97,26 +97,26 @@ export function MetodoDetalladoSection() {
 
 							{/* Contenido */}
 							<div className={index % 2 === 1 ? 'md:order-1' : ''}>
-								<div className='mb-4 flex items-center gap-4'>
-									<div className='flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#909d7b] font-serif text-2xl font-bold text-white'>
+								<div className='mb-3 md:mb-4 flex items-center gap-3 md:gap-4'>
+									<div className='flex h-12 w-12 md:h-16 md:w-16 shrink-0 items-center justify-center rounded-full bg-[#909d7b] font-serif text-xl md:text-2xl font-bold text-white'>
 										{fase.numero}
 									</div>
-									<h3 className='font-serif text-3xl font-bold text-[#2c2c2c]'>
+									<h3 className='font-serif text-xl md:text-3xl font-bold text-[#2c2c2c]'>
 										{fase.titulo}
 									</h3>
 								</div>
 
-								<div className='space-y-4'>
-									<p className='text-lg leading-relaxed text-[#2c2c2c]'>
+								<div className='space-y-3 md:space-y-4'>
+									<p className='text-base md:text-lg leading-relaxed text-[#2c2c2c]'>
 										{fase.descripcion}
 									</p>
 
 									{fase.lista && (
-										<ul className='ml-6 space-y-2'>
+										<ul className='ml-4 md:ml-6 space-y-1 md:space-y-2'>
 											{fase.lista.map((item, i) => (
 												<li
 													key={i}
-													className='list-disc text-lg text-[#6b6b6b]'
+													className='list-disc text-sm md:text-lg text-[#6b6b6b]'
 												>
 													{item}
 												</li>
@@ -125,13 +125,13 @@ export function MetodoDetalladoSection() {
 									)}
 
 									{fase.extra && (
-										<p className='leading-relaxed text-[#6b6b6b]'>
+										<p className='text-sm md:text-base leading-relaxed text-[#6b6b6b]'>
 											{fase.extra}
 										</p>
 									)}
 
 									{fase.extra2 && (
-										<p className='leading-relaxed text-[#6b6b6b]'>
+										<p className='text-sm md:text-base leading-relaxed text-[#6b6b6b]'>
 											{fase.extra2}
 										</p>
 									)}
@@ -142,9 +142,8 @@ export function MetodoDetalladoSection() {
 				</div>
 
 			{/* CTA final */}
-			<div className='mt-20 text-center'>
+			<div className='mt-12 md:mt-20 text-center'>
 				<Button
-					size='lg'
 					className='bg-[#909d7b] text-white hover:bg-[#7a8766]'
 					asChild
 				>

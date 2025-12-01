@@ -52,34 +52,34 @@ export function HeroSection() {
 			/>
 			<div className='absolute inset-0 bg-black/60' />
 
-			<div className='relative flex min-h-screen flex-col items-center justify-center px-4 py-20 text-center text-white'>
-				<h1 className='mb-6 font-serif text-5xl font-bold leading-tight text-white md:text-7xl'>
+			<div className='relative flex min-h-screen flex-col items-center justify-center px-4 py-12 md:py-20 text-center text-white'>
+				<h1 className='mb-4 md:mb-6 font-serif text-4xl md:text-7xl font-bold leading-tight text-white'>
 					Bienvenido al
 					<br />
 					Hogar de Bari
 				</h1>
-				<p className='mb-12 max-w-3xl text-lg leading-relaxed text-white/90 md:text-xl'>
+				<p className='mb-8 md:mb-12 max-w-3xl text-base md:text-xl leading-relaxed text-white/90'>
 					En HdB, ofrecemos un entorno seguro, humano y profesional donde cada
 					persona es tratada con respeto, cariño y con un plan de vida propio.
 				</p>
 
 				{/* Grid de beneficios */}
-				<div className='mb-12 grid w-full max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4'>
+				<div className='mb-8 md:mb-12 grid w-full max-w-6xl gap-4 md:gap-6 md:grid-cols-2 lg:grid-cols-4'>
 					{beneficios.map((beneficio, index) => {
 						const Icon = beneficio.icon
 						return (
 							<div
 								key={index}
-								className='group relative rounded-lg bg-white/10 p-6 pt-12 backdrop-blur-md transition-all duration-300 hover:bg-white/20'
+								className='group relative rounded-lg bg-white/10 p-4 md:p-6 pt-10 md:pt-12 backdrop-blur-md transition-all duration-300 hover:bg-white/20'
 							>
 								{/* Icono sobresaliendo 50% */}
-								<div className='absolute left-1/2 top-0 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#909d7b] shadow-lg'>
-									<Icon className='h-8 w-8 text-white' />
+								<div className='absolute left-1/2 top-0 flex h-12 w-12 md:h-16 md:w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#909d7b] shadow-lg'>
+									<Icon className='h-6 w-6 md:h-8 md:w-8 text-white' />
 								</div>
-								<h3 className='mb-3 mt-4 h-7 font-serif text-lg font-bold text-white'>
+								<h3 className='mb-2 md:mb-3 mt-3 md:mt-4 h-7 font-serif text-base md:text-lg font-bold text-white'>
 									{beneficio.titulo}
 								</h3>
-								<p className='text-sm leading-relaxed text-white/80'>
+								<p className='text-xs md:text-sm leading-relaxed text-white/80'>
 									{beneficio.descripcion}
 								</p>
 							</div>
@@ -99,40 +99,37 @@ export function HeroSection() {
 						</DialogTrigger>
 						<DialogContent className='sm:max-w-md'>
 							<DialogHeader>
-								<DialogTitle className='text-center text-2xl font-bold text-[#2c2c2c]'>
+								<DialogTitle className='text-center text-xl md:text-2xl font-bold text-[#2c2c2c]'>
 									¿Cómo prefieres contactarnos?
 								</DialogTitle>
 							</DialogHeader>
-							<div className='grid gap-4 py-4'>
+							<div className='grid gap-3 md:gap-4 py-4'>
 								<Button
-									size='lg'
-									className='flex items-center gap-3 bg-[#909d7b] text-white hover:bg-[#7a8766]'
+									className='flex items-center justify-center gap-2 md:gap-3 bg-[#909d7b] text-white hover:bg-[#7a8766] text-sm md:text-base'
 									asChild
 								>
 									<a href='tel:615464425'>
-										<Phone className='h-5 w-5' />
+										<Phone className='h-4 w-4 md:h-5 md:w-5' />
 										Llamar ahora: 615 464 425
 									</a>
 								</Button>
 								<Button
-									size='lg'
-									className='flex items-center gap-3 bg-[#909d7b] text-white hover:bg-[#7a8766]'
+									className='flex items-center justify-center gap-2 md:gap-3 bg-[#909d7b] text-white hover:bg-[#7a8766] text-sm md:text-base'
 									asChild
 								>
 									<a href='tel:651105396'>
-										<Phone className='h-5 w-5' />
+										<Phone className='h-4 w-4 md:h-5 md:w-5' />
 										Llamar ahora: 651 105 396
 									</a>
 								</Button>
 								<DialogClose asChild>
 									<Button
-										size='lg'
 										variant='outline'
-										className='flex items-center gap-3 border-[#909d7b] text-[#909d7b] hover:bg-[#909d7b] hover:text-white'
+										className='flex items-center justify-center gap-2 md:gap-3 border-[#909d7b] text-[#909d7b] hover:bg-[#909d7b] hover:text-white text-sm md:text-base'
 										asChild
 									>
 										<a href='#contacto'>
-											<Mail className='h-5 w-5' />
+											<Mail className='h-4 w-4 md:h-5 md:w-5' />
 											Ir al formulario
 										</a>
 									</Button>

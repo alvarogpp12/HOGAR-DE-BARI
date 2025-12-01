@@ -35,13 +35,13 @@ export function ContactSection() {
 	}
 
 	return (
-		<section id='contacto' className='bg-[#F9F1E8] py-20'>
+		<section id='contacto' className='bg-[#F9F1E8] py-12 md:py-20'>
 			<div className='container mx-auto px-4'>
-				<div className='mb-12 text-center'>
-					<h2 className='mb-4 font-serif text-4xl font-bold text-[#2c2c2c] md:text-5xl'>
+				<div className='mb-8 md:mb-12 text-center'>
+					<h2 className='mb-3 md:mb-4 font-serif text-3xl md:text-5xl font-bold text-[#2c2c2c]'>
 						¡Contáctanos hoy!
 					</h2>
-					<p className='mx-auto max-w-2xl text-lg text-[#6b6b6b]'>
+					<p className='mx-auto max-w-2xl text-base md:text-lg text-[#6b6b6b]'>
 						Estamos aquí para responder tus preguntas y brindarte toda la
 						información que necesitas
 					</p>
@@ -125,25 +125,25 @@ export function ContactSection() {
 							<CardTitle className='text-2xl'>Envíanos un Mensaje</CardTitle>
 						</CardHeader>
 						<CardContent>
-							<div className='mb-6 space-y-4 rounded-lg bg-[#909d7b]/5 p-4'>
-								<p className='font-semibold text-[#2c2c2c]'>
+							<div className='mb-4 md:mb-6 space-y-3 md:space-y-4 rounded-lg bg-[#909d7b]/5 p-3 md:p-4'>
+								<p className='text-sm md:text-base font-semibold text-[#2c2c2c]'>
 									Puedes escribirnos aunque no tengas claro qué necesitas.
 								</p>
-								<div className='space-y-2 text-sm text-[#6b6b6b]'>
+								<div className='space-y-2 text-xs md:text-sm text-[#6b6b6b]'>
 									<p>Muchas familias llegan con mil dudas:</p>
-									<ul className='ml-4 space-y-1'>
+									<ul className='ml-3 md:ml-4 space-y-1'>
 										<li>– &ldquo;No sé si mi familiar se adaptaría&rdquo;,</li>
 										<li>– &ldquo;No sé si es el momento&rdquo;,</li>
 										<li>– &ldquo;No queremos que se sienta abandonado/a&rdquo;…</li>
 									</ul>
 								</div>
-								<p className='text-sm font-medium text-[#909d7b]'>
+								<p className='text-xs md:text-sm font-medium text-[#909d7b]'>
 									Es normal. Nuestro primer paso siempre es escuchar y explicar
 									cómo trabajamos.
 								</p>
 							</div>
 
-							<div className='mb-6 space-y-3 text-sm text-[#6b6b6b]'>
+							<div className='mb-4 md:mb-6 space-y-2 md:space-y-3 text-xs md:text-sm text-[#6b6b6b]'>
 								<p>
 									Cuéntanos un poco vuestra situación y te responderemos lo
 									antes posible.

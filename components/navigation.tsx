@@ -34,14 +34,14 @@ export function Navigation() {
 			}`}
 		>
 			<div className='container mx-auto px-0'>
-				<div className='flex h-24 items-center justify-between'>
+				<div className='flex h-16 md:h-24 items-center justify-between'>
 				<Link href='/' className='-ml-4 shrink-0'>
 					<Image
 						src='/LOGO/Hogar de Bari.svg'
 						alt='Hogar de Bari'
 						width={115}
 						height={115}
-						className={`h-[115px] w-auto transition-all ${
+						className={`h-[60px] md:h-[115px] w-auto transition-all ${
 							isScrolled ? 'brightness-0' : 'brightness-0 invert'
 						}`}
 						priority

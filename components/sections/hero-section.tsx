@@ -11,19 +11,19 @@ const beneficios = [
 	},
 	{
 		icon: UserCheck,
-		titulo: 'Un plan pensado para tu familiar',
+		titulo: 'Plan a medida',
 		descripcion:
 			'No hacemos "lo mismo para todos". Hablamos con vosotros, vemos qué necesita y qué le ayuda, y a partir de ahí marcamos rutinas y apoyos a su medida.',
 	},
 	{
 		icon: Users,
-		titulo: 'Equipo con experiencia, pero también cercano',
+		titulo: 'Profesionales',
 		descripcion:
 			'Psicología, enfermería, fisioterapia, educación… pero sobre todo personas que tratan a los residentes con respeto y paciencia.',
 	},
 	{
 		icon: MessageCircle,
-		titulo: 'Comunicación constante con la familia',
+		titulo: 'Seguimiento continuo',
 		descripcion:
 			'No quieres enterarte de las cosas "cuando ya han pasado". Mantenemos el contacto, contamos cómo va todo y escuchamos vuestras dudas.',
 	},
@@ -66,7 +66,7 @@ export function HeroSection() {
 								<div className='absolute left-1/2 top-0 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#909d7b] shadow-lg'>
 									<Icon className='h-8 w-8 text-white' />
 								</div>
-								<h3 className='mb-3 mt-4 font-serif text-lg font-bold text-white'>
+								<h3 className='mb-3 mt-4 h-7 font-serif text-lg font-bold text-white'>
 									{beneficio.titulo}
 								</h3>
 								<p className='text-sm leading-relaxed text-white/80'>

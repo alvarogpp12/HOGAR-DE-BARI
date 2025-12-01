@@ -61,19 +61,16 @@ export function MetodoDetalladoSection() {
 	return (
 		<section id='metodo-detallado' className='bg-white py-20'>
 			<div className='container mx-auto px-4'>
-				<div className='mb-16 text-center'>
-					<h2 className='mb-6 font-serif text-4xl font-bold text-[#2c2c2c] md:text-5xl'>
-						Así es el Método HDB
-					</h2>
-					<p className='mx-auto max-w-3xl text-lg leading-relaxed text-[#6b6b6b]'>
-						El Método HDB no es una teoría complicada, es nuestra forma de
-						asegurar que tu familiar recibe lo que necesita y que tú sabes en
-						todo momento qué estamos haciendo y por qué.
-					</p>
-					<p className='mt-4 text-lg font-semibold text-[#909d7b]'>
-						Lo hemos organizado en 5 pasos muy claros:
-					</p>
-				</div>
+			<div className='mb-16 text-center'>
+				<h2 className='mb-6 font-serif text-4xl font-bold text-[#2c2c2c] md:text-5xl'>
+					Así es el Método HDB
+				</h2>
+				<p className='mx-auto max-w-3xl text-lg leading-relaxed text-[#6b6b6b]'>
+					El Método HDB no es una teoría complicada, es nuestra forma de
+					asegurar que tu familiar recibe lo que necesita y que tú sabes en
+					todo momento qué estamos haciendo y por qué.
+				</p>
+			</div>
 
 				<div className='mx-auto max-w-6xl space-y-16'>
 					{fases.map((fase, index) => (
@@ -144,20 +141,16 @@ export function MetodoDetalladoSection() {
 					))}
 				</div>
 
-				{/* CTA final */}
-				<div className='mt-20 rounded-lg bg-[#F9F1E8] p-8 text-center md:p-12'>
-					<p className='mb-6 font-serif text-2xl font-bold text-[#2c2c2c] md:text-3xl'>
-						Si quieres que te contemos cómo podría aplicarse el Método HDB al
-						caso de tu familiar, podemos hablarlo con calma.
-					</p>
-					<Button
-						size='lg'
-						className='bg-[#909d7b] text-white hover:bg-[#7a8766]'
-						asChild
-					>
-						<a href='#contacto'>Quiero hablar sobre nuestro caso →</a>
-					</Button>
-				</div>
+			{/* CTA final */}
+			<div className='mt-20 text-center'>
+				<Button
+					size='lg'
+					className='bg-[#909d7b] text-white hover:bg-[#7a8766]'
+					asChild
+				>
+					<a href='#contacto'>Quiero hablar sobre nuestro caso →</a>
+				</Button>
+			</div>
 			</div>
 		</section>
 	)

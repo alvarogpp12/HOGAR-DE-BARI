@@ -60,14 +60,13 @@ export function HeroSection() {
 						return (
 							<div
 								key={index}
-								className='group rounded-lg bg-white/10 p-6 backdrop-blur-md transition-all duration-300 hover:bg-white/20'
+								className='group relative rounded-lg bg-white/10 p-6 pt-12 backdrop-blur-md transition-all duration-300 hover:bg-white/20'
 							>
-								<div className='mb-4 flex justify-center'>
-									<div className='flex h-16 w-16 items-center justify-center rounded-full bg-[#909d7b]'>
-										<Icon className='h-8 w-8 text-white' />
-									</div>
+								{/* Icono sobresaliendo 50% */}
+								<div className='absolute left-1/2 top-0 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#909d7b] shadow-lg'>
+									<Icon className='h-8 w-8 text-white' />
 								</div>
-								<h3 className='mb-3 font-serif text-lg font-bold text-white'>
+								<h3 className='mb-3 mt-4 font-serif text-lg font-bold text-white'>
 									{beneficio.titulo}
 								</h3>
 								<p className='text-sm leading-relaxed text-white/80'>

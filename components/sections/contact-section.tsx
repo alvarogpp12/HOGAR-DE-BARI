@@ -125,6 +125,24 @@ export function ContactSection() {
 							<CardTitle className='text-2xl'>Envíanos un Mensaje</CardTitle>
 						</CardHeader>
 						<CardContent>
+							<div className='mb-6 space-y-4 rounded-lg bg-[#909d7b]/5 p-4'>
+								<p className='font-semibold text-[#2c2c2c]'>
+									Puedes escribirnos aunque no tengas claro qué necesitas.
+								</p>
+								<div className='space-y-2 text-sm text-[#6b6b6b]'>
+									<p>Muchas familias llegan con mil dudas:</p>
+									<ul className='ml-4 space-y-1'>
+										<li>– "No sé si mi familiar se adaptaría",</li>
+										<li>– "No sé si es el momento",</li>
+										<li>– "No queremos que se sienta abandonado/a"…</li>
+									</ul>
+								</div>
+								<p className='text-sm font-medium text-[#909d7b]'>
+									Es normal. Nuestro primer paso siempre es escuchar y explicar
+									cómo trabajamos.
+								</p>
+							</div>
+
 							<div className='mb-6 space-y-3 text-sm text-[#6b6b6b]'>
 								<p>
 									Cuéntanos un poco vuestra situación y te responderemos lo

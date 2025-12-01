@@ -132,9 +132,9 @@ export function ContactSection() {
 								<div className='space-y-2 text-sm text-[#6b6b6b]'>
 									<p>Muchas familias llegan con mil dudas:</p>
 									<ul className='ml-4 space-y-1'>
-										<li>– "No sé si mi familiar se adaptaría",</li>
-										<li>– "No sé si es el momento",</li>
-										<li>– "No queremos que se sienta abandonado/a"…</li>
+										<li>– &ldquo;No sé si mi familiar se adaptaría&rdquo;,</li>
+										<li>– &ldquo;No sé si es el momento&rdquo;,</li>
+										<li>– &ldquo;No queremos que se sienta abandonado/a&rdquo;…</li>
 									</ul>
 								</div>
 								<p className='text-sm font-medium text-[#909d7b]'>

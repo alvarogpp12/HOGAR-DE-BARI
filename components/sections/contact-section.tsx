@@ -125,6 +125,17 @@ export function ContactSection() {
 							<CardTitle className='text-2xl'>Envíanos un Mensaje</CardTitle>
 						</CardHeader>
 						<CardContent>
+							<div className='mb-6 space-y-3 text-sm text-[#6b6b6b]'>
+								<p>
+									Cuéntanos un poco vuestra situación y te responderemos lo
+									antes posible.
+								</p>
+								<p>
+									Si lo prefieres, también podemos agendar una llamada en un
+									horario que te venga bien.
+								</p>
+							</div>
+
 							<form onSubmit={handleSubmit} className='space-y-4'>
 								<div>
 									<label
@@ -196,6 +207,11 @@ export function ContactSection() {
 										</>
 									)}
 								</Button>
+
+								<p className='pt-2 text-xs text-[#6b6b6b]/80'>
+									Usaremos tus datos solo para responder a tu mensaje. No los
+									compartimos con nadie más.
+								</p>
 							</form>
 						</CardContent>
 					</Card>

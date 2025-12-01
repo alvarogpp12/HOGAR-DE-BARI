@@ -1,6 +1,15 @@
+'use client'
+
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { ChevronDown, Clock, UserCheck, Users, MessageCircle } from 'lucide-react'
+import {
+	Dialog,
+	DialogContent,
+	DialogHeader,
+	DialogTitle,
+	DialogTrigger,
+} from '@/components/ui/dialog'
+import { ChevronDown, Clock, UserCheck, Users, MessageCircle, Phone, Mail } from 'lucide-react'
 
 const beneficios = [
 	{
@@ -78,13 +87,56 @@ export function HeroSection() {
 				</div>
 
 				<div className='flex flex-col gap-4 sm:flex-row'>
-					<Button
-						size='lg'
-						className='bg-[#909d7b] text-white hover:bg-[#7a8766]'
-						asChild
-					>
-						<a href='#contacto'>Contáctanos</a>
-					</Button>
+					<Dialog>
+						<DialogTrigger asChild>
+							<Button
+								size='lg'
+								className='bg-[#909d7b] text-white hover:bg-[#7a8766]'
+							>
+								Contáctanos
+							</Button>
+						</DialogTrigger>
+						<DialogContent className='sm:max-w-md'>
+							<DialogHeader>
+								<DialogTitle className='text-center text-2xl font-bold text-[#2c2c2c]'>
+									¿Cómo prefieres contactarnos?
+								</DialogTitle>
+							</DialogHeader>
+							<div className='grid gap-4 py-4'>
+								<Button
+									size='lg'
+									className='flex items-center gap-3 bg-[#909d7b] text-white hover:bg-[#7a8766]'
+									asChild
+								>
+									<a href='tel:615464425'>
+										<Phone className='h-5 w-5' />
+										Llamar ahora: 615 464 425
+									</a>
+								</Button>
+								<Button
+									size='lg'
+									className='flex items-center gap-3 bg-[#909d7b] text-white hover:bg-[#7a8766]'
+									asChild
+								>
+									<a href='tel:651105396'>
+										<Phone className='h-5 w-5' />
+										Llamar ahora: 651 105 396
+									</a>
+								</Button>
+								<Button
+									size='lg'
+									variant='outline'
+									className='flex items-center gap-3 border-[#909d7b] text-[#909d7b] hover:bg-[#909d7b] hover:text-white'
+									asChild
+								>
+									<a href='#contacto'>
+										<Mail className='h-5 w-5' />
+										Ir al formulario
+									</a>
+								</Button>
+							</div>
+						</DialogContent>
+					</Dialog>
 					<Button
 						size='lg'
 						variant='outline'

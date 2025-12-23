@@ -1,56 +1,84 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-	:root {
-		/* Hogar de Bari - Paleta de Colores MODERNA */
-		/* Fondo: #F9F1E8 (Crema) */
-		/* Botones: #909d7b (Verde moderno) */
-		/* Texto: #2c2c2c (Gris oscuro) */
-		
-		--background: 0 0% 100%;
-		--foreground: 0 0% 17%;
-		--card: 0 0% 100%;
-		--card-foreground: 0 0% 17%;
-		--popover: 0 0% 100%;
-		--popover-foreground: 0 0% 17%;
-		--primary: 91 13% 55%;
-		--primary-foreground: 0 0% 100%;
-		--secondary: 36 53% 95%;
-		--secondary-foreground: 0 0% 17%;
-		--muted: 36 53% 95%;
-		--muted-foreground: 0 0% 42%;
-		--accent: 91 13% 55%;
-		--accent-foreground: 0 0% 100%;
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 0 0% 98%;
-		--border: 36 30% 85%;
-		--input: 36 30% 85%;
-		--ring: 91 13% 55%;
-		--radius: 0.5rem;
-		
-		/* Variables directas HEX - PALETA MODERNA */
-		--color-fondo-crema: #F9F1E8;
-		--color-boton: #909d7b;
-		--color-boton-hover: #7a8766;
-		--color-texto-oscuro: #2c2c2c;
-		--color-texto-secundario: #6b6b6b;
-		--color-blanco: #ffffff;
-	}
+@theme {
+	/* Hogar de Bari - Paleta de Colores MODERNA */
+	--color-background: #ffffff;
+	--color-foreground: #2c2c2c;
+	--color-fondo-crema: #F9F1E8;
+	--color-boton: #909d7b;
+	--color-boton-hover: #7a8766;
+	--color-texto-oscuro: #2c2c2c;
+	--color-texto-secundario: #6b6b6b;
+	--color-blanco: #ffffff;
 	
-	body {
-		background-color: var(--color-blanco);
-		color: var(--color-texto-oscuro);
-	}
+	/* Primary colors */
+	--color-primary: #909d7b;
+	--color-primary-foreground: #ffffff;
+	
+	/* Secondary colors */
+	--color-secondary: #F9F1E8;
+	--color-secondary-foreground: #2c2c2c;
+	
+	/* Muted colors */
+	--color-muted: #F9F1E8;
+	--color-muted-foreground: #6b6b6b;
+	
+	/* Accent colors */
+	--color-accent: #909d7b;
+	--color-accent-foreground: #ffffff;
+	
+	/* Border/Input */
+	--color-border: #e5ddd4;
+	--color-input: #e5ddd4;
+	--color-ring: #909d7b;
+	
+	/* Card */
+	--color-card: #ffffff;
+	--color-card-foreground: #2c2c2c;
+	
+	/* Popover */
+	--color-popover: #ffffff;
+	--color-popover-foreground: #2c2c2c;
+	
+	/* Destructive */
+	--color-destructive: #ef4444;
+	--color-destructive-foreground: #fafafa;
+	
+	/* Border radius */
+	--radius-lg: 0.5rem;
+	--radius-md: calc(0.5rem - 2px);
+	--radius-sm: calc(0.5rem - 4px);
+	
+	/* Fonts */
+	--font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+	--font-serif: var(--font-seasons), Georgia, serif;
+	
+	/* Container */
+	--container-2xl: 1400px;
+	
+	/* Animations */
+	--animate-accordion-down: accordion-down 0.2s ease-out;
+	--animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+@keyframes accordion-down {
+	from { height: 0; }
+	to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+	from { height: var(--radix-accordion-content-height); }
+	to { height: 0; }
 }
 
 @layer base {
 	* {
-		@apply border-border;
+		border-color: var(--color-border);
 	}
+	
 	body {
-		@apply bg-background text-foreground;
+		background-color: var(--color-background);
+		color: var(--color-foreground);
 		font-feature-settings: 'rlig' 1, 'calt' 1;
 	}
 }
@@ -60,4 +88,3 @@
 		text-wrap: balance;
 	}
 }
-
